@@ -1,0 +1,21 @@
+.last_block{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    .heading{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        color: #2C2D2E;
+        margin-bottom: 40px;
+    }
+    .cards_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
