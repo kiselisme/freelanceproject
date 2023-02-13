@@ -44,6 +44,10 @@
         font-size: 16px;
         line-height: 24px;
         margin-top: 9px;
+        width: 402px;
+        height: 48px;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+        border-radius: 6px;
     }
 
     span {
@@ -56,7 +60,7 @@
     }
 
 
-    button{
+    button {
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
@@ -68,6 +72,7 @@
         border-radius: 12px;
         padding: 12px 0;
     }
+
     .signInbtn {
         background: #465EFD;
         color: #FFFFFF;
@@ -75,7 +80,10 @@
     }
 
     .signUpbtn {
+        width: 402px;
+        height: 48px;
         border: 1px solid rgba(0, 16, 61, 0.12);
-        color: #2C2D2E;
+        border-radius: 12px;
+        background: #FFFFFF;        
     }
 }

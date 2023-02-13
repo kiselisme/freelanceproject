@@ -1,9 +1,6 @@
 import React from 'react';
-import s from './SignIn.module.scss';
-import { Link } from "react-router-dom";
 
-const SignIn = () => {
-
+const forReset = ({ setWhichForm }) => {
     return (
         <div className={s.signIn}>
             <h2>Авторизация</h2>
@@ -15,15 +12,11 @@ const SignIn = () => {
                 Пароль
                 <input type="password" id="email" className={s.inputs} />
             </label>
-            <Link to='/resetPassword'>
-            <span >Восстановить пароль</span>
-            </Link>
+            <span onClick={() => setWhichForm('resetPassword')}>Восстановить пароль</span>
             <button className={s.signInbtn}>Войти</button>
-            <Link to="/registr">
-            <button className={s.signUpbtn}>Зарегистрироваться</button>
-            </Link>
+            <button onClick={() => setWhichForm('signUp')} className={s.signUpbtn}>Зарегистрироваться</button>
         </div>
     );
 };
 
-export default SignIn;
+export default forReset;
